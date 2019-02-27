@@ -4,7 +4,6 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.naive_bayes import MultinomialNB  # 多项式贝叶斯分类器
 from sklearn import metrics
 
-
 # 对文档分词
 def cut_file(path):
     '''
@@ -23,7 +22,6 @@ def cut_file(path):
                 word_list = list(jieba.cut(content))
                 documents.append(' '.join(word_list))  # 空格隔开分词
     return documents, labels
-
 
 train_path = r"text_classification-master\text_classification\train"
 test_path = r"text_classification-master\text_classification\test"
